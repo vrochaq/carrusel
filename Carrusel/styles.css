@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --fuente: "Open Sans", sans-serif;
+    --backgroung: #FFFFFF;
+    --header-bg:
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--backgroung);
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #87A2FF;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-bottom: 3px solid #87A2FF;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+header h1:hover {
+    color: #87A2FF;
+}
+
+header h2 {
+    font-size: 1.5em;
+    color: #555;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+header h2:hover {
+    color: #333;
+}
+
+.carousel {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-nav {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.carousel-nav button {
+    font-size: 1rem;
+    padding: 12px 25px;
+    margin: 0 10px;
+    border: none;
+    background-color: #82AAE3;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.carousel-nav button:hover {
+    background-color: #82AAE3;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #82AAE3;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-nav button {
+        padding: 10px 20px;
+    }
+
+    footer p {
+        font-size: 0.85em;
+    }
+}
